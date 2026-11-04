@@ -1,153 +1,72 @@
 <div align="center">
 
-<img src="public/preview/banner.png" alt="BentoUI — Bento Grid Kit for React, TypeScript, and Tailwind CSS 4" width="100%" />
+<img src="public/preview/banner.png" alt="BentoUI by Flowsee" width="100%" />
 
-# BentoUI
+<br /><br />
 
-### Build expressive product grids without starting from zero.
+# BentoUI 🍱
+### کیت چیدمان‌های مدرن Bento Grid برای React، تایپ‌اسکریپت و Tailwind CSS 4
 
-**React · TypeScript · Tailwind CSS 4 · Responsive · RTL/LTR**
+<p align="center">
+  <b>توسعه‌یافته بر پایه دیزاین‌سیستم استودیو فلوسی · پشتیبانی بومی از راست‌چین (RTL) · واکنش‌گرایی مهندسی‌شده</b>
+</p>
 
-[English](#english) · [فارسی](#فارسی) · [Get started](#quick-start)
+<!-- Badges with Flowsee Orange (#fe5400) -->
+<p align="center">
+  <a href="https://react.dev/">
+    <img src="https://img.shields.io/badge/React-19-fe5400?style=flat-square&logo=react&logoColor=white&labelColor=18181b" alt="React 19" />
+  </a>
+  <a href="https://tailwindcss.com/">
+    <img src="https://img.shields.io/badge/Tailwind_CSS-v4.0-fe5400?style=flat-square&logo=tailwind-css&logoColor=white&labelColor=18181b" alt="Tailwind 4" />
+  </a>
+  <a href="https://www.typescriptlang.org/">
+    <img src="https://img.shields.io/badge/TypeScript-5.0-fe5400?style=flat-square&logo=typescript&logoColor=white&labelColor=18181b" alt="TypeScript" />
+  </a>
+  <img src="https://img.shields.io/badge/RTL-Native_Supported-fe5400?style=flat-square&labelColor=18181b" alt="RTL Supported" />
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-fe5400?style=flat-square&labelColor=18181b" alt="License" />
+  </a>
+</p>
+
+<!-- Action Links -->
+<p align="center">
+  <a href="https://flowsee-org.github.io/bentoui/"><b>مشاهده پیش‌نمایش زنده</b></a> •
+  <a href="https://github.com/flowsee-org/bentoui/issues"><b>ثبت بازخورد و باگ</b></a> •
+  <a href="#english-documentation"><b>English Doc</b></a>
+</p>
 
 </div>
 
 ---
 
-<a id="english"></a>
+## 📌 معرفی و ویژگی‌ها
 
-## BentoUI — A Bento Grid kit for real product interfaces
+چیدمان‌های **Bento Grid** استاندارد طلایی معرفی محصولات مدرن، صفحات لندینگ SaaS و پورتفولیوهای بین‌المللی هستند؛ اما پیاده‌سازی گرید‌های نامتقارن، رفتار ریسپانسیو بی‌نقص و به‌ویژه **راست‌چین‌سازی (RTL)** دقیق آن‌ها در فرانت‌اند معمولاً ساعت‌ها زمان می‌برد.
 
-BentoUI is a set of reusable Bento Grid compositions and React cards for showcasing products, projects, articles, and ideas. It provides a starting point for landing pages, portfolios, and dashboards, with responsive layouts and right-to-left support.
+**BentoUI** حاصل استخراج الگوهای واقعی دیزاین‌سیستم [استودیو فلوسی (Flowsee)](https://flowsee.ir) است تا بدون شروع از صفر، ترکیب‌های بصری چشم‌نواز با تایپ‌اسکریپت و نسل جدید **Tailwind CSS 4** بسازید.
 
-### What you get
+### ✨ داخل کیت چه چیزهایی هست؟
 
-- Three compositions: Showcase, Editorial, and Mixed.
-- Three- or four-column desktop Showcase.
-- Responsive mobile, tablet, and desktop layouts.
-- RTL/LTR support and light/dark themes.
-- Reusable React + TypeScript components.
-- Local illustrations and icons.
-
-### Quick start
-
-Requires Node.js 20.19+ or 22.12+.
-
-```sh
-git clone https://github.com/flowsee-org/bentoui.git
-cd bentoui
-npm install
-npm run dev
-```
-
-### Use a section
-
-```tsx
-import { BentoSection } from './src/components/Bento'
-
-export function WorkSection() {
-  return <BentoSection pattern="showcase" columns={3} />
-}
-```
-
-Choose `showcase`, `editorial`, or `mixed` with `pattern`. Set `columns={4}` for a four-column Showcase. Pass `items`, `title`, and `allHref` to customize the section.
-
-### Components
-
-`BentoSection`, `HeroBentoCard`, `ProjectCard`, `ArticleCard`, `BentoCover`, and `BentoArrow` are exported from `src/components/Bento.tsx`. The same file exports `Pattern`, `StoryKey`, and `Story`.
-
-### Development commands
-
-```sh
-npm run dev
-npm run build
-npm run preview
-npm run lint
-```
-
-The production build is generated in `dist/`.
-
-### Deploy to InfinityFree
-
-1. Run `npm run build` locally.
-2. Upload the **contents** of `dist/` to your domain's document root, usually `htdocs` (not the `dist` folder itself).
-3. If you use client-side routes, configure the host to serve `index.html` for unknown paths. The preview's `/work` and `/blog` links are examples and need real routes or destinations.
-4. For a subdirectory deployment, set Vite's `base` option to that path before building. For a root domain, the default `/` is appropriate.
-
-InfinityFree hosts the built static files; it does not run the Vite development server. Re-upload the updated build after changes.
-
-### Notes
-
-- Dana is a commercial font and is not included. Use a licensed font file if you need it.
-- Example destinations such as `/work` and `/blog` must be connected to your router or CMS.
-- MIT license: see [LICENSE](./LICENSE).
+- **۳ ترکیب آماده معماری‌شده:**
+  - `Showcase`: ترکیب ویترینی برای نمایش فیچرهای کلیدی و کارت قهرمان (Hero Card) با قابلیت سوئیچ بین ۳ و ۴ ستون در دسکتاپ.
+  - `Editorial`: چیدمان مقاله‌محور و داستان‌گویی محصول برای پورتفولیو و استوری‌تلینگ.
+  - `Mixed`: ترکیب متعادل تصویر و متن با ریتم بصری ناهمگن.
+- **پشتیبانی بومی از RTL و LTR:** بدون باگ چینش آیکون‌ها و فلش‌های جهت‌دار در زبان‌های فارسی و عربی.
+- **تم دوگانه Dark / Light:** پالت رنگی خنثی و بدون وابستگی، آماده تطبیق با هویت برند شما.
+- **کامپوننت‌های ماژولار React + TypeScript:** دریافت داده‌ها با پراپ‌های کاملاً تایپ‌شده (Typed Props).
+- **صفر وابستگی خارجی حجیم:** بدون نیاز به پکیج‌های انیمیشن سنگین، صرفاً با قدرت گرید مدرن CSS و Tailwind 4.
 
 ---
 
-<a id="فارسی"></a>
+### 🚀 شروع سریع
 
-## BentoUI — کیت طراحی Bento Grid برای رابط‌های واقعی
-
-BentoUI مجموعه‌ای از چیدمان‌های آماده و کارت‌های React قابل‌استفادهٔ مجدد برای نمایش محصول، پروژه، مقاله و ایده است. این کیت برای ساخت سریع‌تر صفحهٔ معرفی محصول، پورتفولیو یا داشبورد طراحی شده و از چیدمان واکنش‌گرا و راست‌چین پشتیبانی می‌کند.
-
-### امکانات
-
-- سه ترکیب آماده: Showcase، Editorial و Mixed.
-- چیدمان Showcase سه‌ستونه یا چهارستونه در دسکتاپ.
-- چیدمان واکنش‌گرا برای موبایل، تبلت و دسکتاپ.
-- پشتیبانی از RTL/LTR و تم روشن/تیره.
-- کامپوننت‌های قابل‌استفادهٔ مجدد با React و TypeScript.
-- تصویرها و آیکن‌های محلی.
-
-### شروع سریع
-
-به Node.js نسخهٔ 20.19 یا 22.12 به بالا نیاز است.
-
-```sh
-git clone https://github.com/flowsee-org/bentoui.git
+```bash
+# ۱. کلون ریپازیتوری
+git clone [https://github.com/flowsee-org/bentoui.git](https://github.com/flowsee-org/bentoui.git)
 cd bentoui
+
+# ۲. نصب وابستگی‌ها
 npm install
+
+# ۳. اجرای محیط پیش‌نمایش محلی
 npm run dev
-```
-
-### استفاده در پروژه
-
-```tsx
-import { BentoSection } from './src/components/Bento'
-
-export function WorkSection() {
-  return <BentoSection pattern="showcase" columns={3} />
-}
-```
-
-با پراپ `pattern` یکی از ترکیب‌های `showcase`، `editorial` یا `mixed` را انتخاب کن. برای Showcase چهارستونه، `columns={4}` بگذار. با `items`، `title` و `allHref` می‌توانی محتوا و لینک بخش را تغییر بدهی.
-
-### کامپوننت‌ها
-
-کامپوننت‌های `BentoSection`، `HeroBentoCard`، `ProjectCard`، `ArticleCard`، `BentoCover` و `BentoArrow` از فایل `src/components/Bento.tsx` قابل import هستند. نوع‌های `Pattern`، `StoryKey` و `Story` هم در همان فایل قرار دارند.
-
-### دستورهای توسعه
-
-```sh
-npm run dev
-npm run build
-npm run preview
-npm run lint
-```
-
-خروجی نسخهٔ production در پوشهٔ `dist/` ساخته می‌شود.
-
-### انتشار روی InfinityFree
-
-1. در سیستم خودت `npm run build` را اجرا کن.
-2. **محتویات** پوشهٔ `dist/` را در ریشهٔ سایت، معمولاً `htdocs`، بارگذاری کن؛ خود پوشهٔ `dist` را منتقل نکن.
-3. اگر مسیرهای سمت کاربر داری، تنظیم کن که مسیرهای ناشناخته به `index.html` برسند. لینک‌های نمونهٔ `/work` و `/blog` باید به مسیرهای واقعی وصل شوند.
-4. برای انتشار در زیرپوشه، مقدار `base` در تنظیمات Vite را پیش از build مطابق مسیر تنظیم کن. برای دامنهٔ اصلی، مقدار پیش‌فرض `/` مناسب است.
-
-InfinityFree فایل‌های استاتیک buildشده را میزبانی می‌کند و سرور توسعهٔ Vite را اجرا نمی‌کند. پس از هر تغییر، build جدید را بارگذاری کن.
-
-### نکته‌ها
-
-- فونت Dana تجاری است و همراه پروژه منتشر نشده؛ برای استفاده از آن باید مجوز داشته باشی.
-- لینک‌هایی مثل `/work` و `/blog` نمونه‌اند و باید به روتر یا CMS وصل شوند.
-- مجوز پروژه MIT است؛ فایل [LICENSE](./LICENSE) را ببین.
