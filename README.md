@@ -70,3 +70,34 @@ npm install
 
 # ۳. اجرای محیط پیش‌نمایش محلی
 npm run dev
+
+
+
+
+
+
+
+
+
+
+---
+
+## English Documentation
+
+**BentoUI** is an opinionated, production-ready Bento Grid kit built with React, TypeScript, and Tailwind CSS 4. Crafted around [Flowsee](https://flowsee.ir)'s design tokens, it offers plug-and-play asymmetric grid compositions with built-in bidirectional (RTL/LTR) support.
+
+### ✨ Key Features
+
+- **3 Curated Grid Patterns:** `showcase` (supports 3 or 4 desktop columns), `editorial`, and `mixed`.
+- **First-class RTL & LTR Support:** Flawless layout mirroring for Persian, Arabic, and English typography.
+- **Tailwind CSS 4 Ready:** Leveraging the modern CSS-first engine and modern grid layout properties.
+- **Clean Architecture:** Zero bloat, no external animation libraries required.
+- **Dark & Light Modes:** Seamless switching using Tailwind container classes.
+
+### 🚀 Quick Start
+
+```bash
+git clone [https://github.com/flowsee-org/bentoui.git](https://github.com/flowsee-org/bentoui.git)
+cd bentoui
+npm install
+npm run dev
