@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --font-sans: Dana, Tahoma, sans-serif;
+  --color-ink: #20252d;
+  --color-muted: #697386;
+  --color-accent: #c84612;
+  --color-line: #d5dae2;
+  --color-tint: #fff0e8;
+  --color-canvas: #f5f6f8;
+}
+@font-face { font-family: Dana; src: local("Dana Regular"), local("Dana-Regular"); font-weight: 400; font-display: swap; }
+@font-face { font-family: Dana; src: local("Dana Bold"), local("Dana-Bold"); font-weight: 700; font-display: swap; }
+@layer base { .dark { color-scheme: dark; } }
