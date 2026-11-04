@@ -27,7 +27,7 @@ export function BentoCover({ cover, eager = false }: Pick<Story, 'cover'> & { ea
 function BaseCard({ story, placement = '', tall = false, eager = false, action }: CardProps & { action: string }) {
   const titleId = useId()
   return <article data-card={story.key} className={`min-w-0 ${placement}`}>
-    <a href={story.href} aria-labelledby={titleId} className="group flex h-full min-h-[360px] flex-col gap-4 rounded-3xl border border-line bg-white p-3 pb-5 text-start text-ink transition-[border-color,box-shadow] duration-200 hover:border-accent hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-100 dark:hover:border-orange-400 dark:focus-visible:outline-orange-300 motion-reduce:transition-none">
+    <div aria-labelledby={titleId} className="flex h-full min-h-[360px] flex-col gap-4 rounded-3xl border border-line bg-white p-3 pb-5 text-start text-ink dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-100">
       <BentoCover cover={story.cover} eager={eager} />
       <div className="flex shrink-0 flex-col gap-2 px-2">
         <div className="flex min-h-[22px] flex-wrap items-center justify-between gap-x-4 gap-y-1 text-xs leading-5">
